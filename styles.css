@@ -1,0 +1,47 @@
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.about {
+    width: 500px;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+h4 {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+}
+.about {
+    color: white;
+}
