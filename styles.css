@@ -68,6 +68,34 @@ input {
     font-weight: 600;
 }
 
+input:invalid {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+input[class="input"]:required:not(:focus):invalid {
+    background: url(/images/icon-error.svg) no-repeat;
+    background-position: 360px;
+}
+
+input[class="input"]:focus:valid {
+    background: url(images/icons8-check-circle.svg) no-repeat;
+    background-position: 360px;
+    background-size: 30px;
+}
+
+.error-message {
+    display: none;
+}
+
+input:not(:focus):invalid ~ .error-message{
+    display: block;
+    color: hsl(0, 100%, 74%);
+    text-align: end;
+    font-size: smaller;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 #submit {
     padding: 15px;
     border-radius: 5px;
@@ -85,7 +113,7 @@ p {
 #p1 {
     font-size: 11px;
     text-align: center;
-    color: #E2DFEE;
+    color: hsl(246, 25%, 77%);
 }
 
 a {
